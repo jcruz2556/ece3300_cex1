@@ -22,7 +22,9 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
-	assign result = (7'b1111111 >> (7 - a));
+	always *(@) begin
+		result = (7'b1111111 >> (7 - a));
+	end
    
 endmodule
 
