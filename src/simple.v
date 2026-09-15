@@ -26,7 +26,7 @@ module simple(
 		result = (7'b1111111 >> (7 - a));
 	end
 	*/
-	always *(@) begin
+	always @(*) begin
 		result = 7'b1111111 >> (7 - a);
 	end
 	
